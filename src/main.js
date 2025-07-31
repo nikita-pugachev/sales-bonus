@@ -54,8 +54,8 @@ function analyzeSalesData(data, options) {
     }
     // @TODO: Проверка наличия опций
     if(!options || 
-        typeof calculateSimpleRevenue !== 'function' || 
-        typeof calculateBonusByProfit !== 'function'
+        typeof calculateRevenue !== 'function' || 
+        typeof calculateBonus !== 'function'
     ) {
         throw new Error("Функции для расчёта не переданы!");
     }
